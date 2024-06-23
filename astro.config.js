@@ -9,7 +9,7 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
   // 请修改为你自己的线上地址，谢谢茄子
   site: 'https://miemiesun.github.io/demo/',
-  base: process.env.NODE_ENV === "production" ? "/koi/" : "",
+  base: process.env.NODE_ENV === "production" ? "/demo/" : "",
 
   integrations: [mdx(), sitemap(), tailwind(), svelte()],
   markdown: {
