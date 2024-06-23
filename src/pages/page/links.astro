@@ -1,0 +1,27 @@
+---
+import BlogPage from "../../layouts/BlogPage.astro";
+import Friend from "../../components/friend/Friend.astro";
+import FriendList from "../../components/friend/FriendList.astro";
+import FriendCategoryTitle from "../../components/friend/FriendCategoryTitle.astro";
+import MarkdownBody from "../../components/MarkdownBody.astro";
+
+import * as markdownData from "./_links.md";
+---
+
+<BlogPage title="链接" description="沉醉于手工烘焙的香气，我们的面包购买链接邀您体验从烤箱到餐桌的新鲜旅程。每一款面包都是我们对传统工艺的致敬，无论是酥软的贝果、香脆的法棍，还是充满地中海风情的佛卡夏，每口都是对味觉的极致诱惑。点击下方链接，轻松选购您喜爱的面包，让新鲜烘焙的温暖，成为您日常的一部分。">
+    <FriendCategoryTitle>最新推出</FriendCategoryTitle>
+    <FriendList>
+        <Friend url="https://item.taobao.com/item.htm?spm=a21n57.1.item.387.47c9523cxJyj53&priceTId=213e37ce17190442797353610e3127&utparam=%7B%22aplus_abtest%22:%22df72a4497c5b0aa63d8ddcd7d29c5a61%22%7D&id=726581136971&ns=1&abbucket=4&sku_properties=147956252:92233" name="贝果" description="味籍手作{招牌贝果组合}全麦无蔗糖手工贝果面包早餐健身代餐" avatarUrl="https://gw.alicdn.com/imgextra/i4/2215378706618/O1CN01lwmgbn1yl67Jr7nDq_!!2215378706618.jpg_Q75.jpg_.webp" />
+        <Friend url="https://item.taobao.com/item.htm?spm=a21n57.1.item.626.47c9523cxJyj53&priceTId=2150429317190449448555142e357e&utparam=%7B%22aplus_abtest%22:%2287c8165a5d5a80c1406cda7320699245%22%7D&id=662097836219&ns=1&abbucket=4&skuId=5606120394512" name="欧包" description="QSSD手作软欧包组合全麦芋泥抹茶巧克力夹心代餐点心零食面包整箱" avatarUrl="https://gw.alicdn.com/imgextra/i4/893460454/O1CN01WYYmcE1FDyiWic4yd_!!893460454.jpg_Q75.jpg_.webp" />
+        <Friend url="https://item.taobao.com/item.htm?spm=a21n57.1.item.531.47c9523cxJyj53&priceTId=213e372917190444956563211e0598&utparam=%7B%22aplus_abtest%22:%2265108292eac5f91aa8fc68bc2a055080%22%7D&id=642305874832&ns=1&abbucket=4&skuId=4826182893681" name="佛卡夏" description="枣叔的店佛卡夏芝士油菜鸡胸肉软欧欧包全麦面包早餐速食主食零食" avatarUrl="https://gw.alicdn.com/imgextra/O1CNA11W8eb51Vv3t9ak15q_!!1592652714-0-psf.jpg_Q75.jpg_.webp" />
+    </FriendList>
+    <FriendCategoryTitle>经典产品 </FriendCategoryTitle>
+    <FriendList>
+        <Friend url="https://item.taobao.com/item.htm?spm=a21n57.1.item.194.47c9523cxJyj53&priceTId=2150437517190429411262266efbbf&utparam=%7B%22aplus_abtest%22%3A%228b2781ae025c7d92eca917e1365bc9fa%22%7D&id=678410961579&ns=1&abbucket=4#detail" name="抹茶奶酥碱水棒" description="沈哥哥全麦碱水包抹茶奶酥碱水球碱水棒奶酥欧包代餐饱腹早餐面包" avatarUrl="https://gw.alicdn.com/imgextra/i3/3968972425/O1CN01bs5sq91TmhHJosfJm_!!3968972425.jpg_Q75.jpg_.webp" />
+        <Friend url="https://item.taobao.com/item.htm?spm=a21n57.1.item.98.47c9523cxJyj53&priceTId=213e378c17190428503232855e10e0&utparam=%7B%22aplus_abtest%22:%22dc618a8e48bfbc54f8dc0c4b66158cb2%22%7D&id=761076150530&ns=1&abbucket=4&sku_properties=147956252:121089" name="恰巴塔" description="恰巴塔面包无油无蔗糖一箱700g手工欧包营养早餐代餐饱腹低脂" avatarUrl="https://gw.alicdn.com/imgextra/i1/2216187516245/O1CN01PVPm9R1w0GLZfFZAY_!!2216187516245.jpg_Q75.jpg_.webp"  />
+        <Friend url="https://detail.tmall.com/item.htm?spm=a21n57.1.item.2.47c9523cxJyj53&priceTId=213e379017190427464907901e2a8b&utparam=%7B%22aplus_abtest%22:%22e88f819e21a845b942d6266b77c6013d%22%7D&id=633168303677&ns=1&abbucket=4&sku_properties=147956252:75366510" name="法棍" description="这盛怡佳原味法棍全麦法式长棍面包早餐饱腹即食代餐商用奶香片咸口" avatarUrl="https://gw.alicdn.com/imgextra/i1/2216187516245/O1CN01PVPm9R1w0GLZfFZAY_!!2216187516245.jpg_Q75.jpg_.webp" />
+    </FriendList>
+    <MarkdownBody class="mt-6">
+        <markdownData.Content />
+    </MarkdownBody>
+</BlogPage>
